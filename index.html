@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>你妈了个逼的给老子听好了！</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #1e1e1e;
+            padding: 2% 5%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1, h3 {
+            color: #ff4444;
+        }
+
+        ul {
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        ul li {
+            line-height: 2.3;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #20a53a;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #28d744;
+        }
+
+        button {
+            background-color: #20a53a;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #28d744;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>我操你妈个逼的倒卖狗，你拿免费资源倒卖你妈的臭逼呢</h1>
+        <h3>圈子多大点你还拿来卖你妈的臭逼</h3>
+        <ul>
+            <li>你他妈不知道你妈黑逼早被操烂了吗</li>
+            <li>你倒卖的钱是你妈卖逼的钱吗，你妈黑逼就该被免费操烂，操的里面生蛆溃烂</li>
+            <li>你再卖我直接拿火箭筒轰你妈黑逼把你妈黑逼轰成骨灰，听见没操你妈的</li>
+        </ul>
+        <button onclick="toggleContent()">更多</button>
+        <div id="extraContent" class="hidden">
+            <p>操你妈逼</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("extraContent");
+            if (content.classList.contains("hidden")) {
+                content.classList.remove("hidden");
+                content.style.animation = "fadeIn 1s ease-in-out";
+            } else {
+                content.style.animation = "fadeOut 1s ease-in-out";
+                setTimeout(function() {
+                    content.classList.add("hidden");
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+</html>
